@@ -14,6 +14,7 @@
 		932915421AB8E44100C9DF23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932915411AB8E44100C9DF23 /* Images.xcassets */; };
 		932915451AB8E44100C9DF23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932915431AB8E44100C9DF23 /* LaunchScreen.xib */; };
 		932915511AB8E44200C9DF23 /* SimonSaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 932915501AB8E44200C9DF23 /* SimonSaysTests.m */; };
+		9329155C1AB8EF8C00C9DF23 /* SimonSays.m in Sources */ = {isa = PBXBuildFile; fileRef = 9329155B1AB8EF8C00C9DF23 /* SimonSays.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9329154A1AB8E44200C9DF23 /* SimonSaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonSaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9329154F1AB8E44200C9DF23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932915501AB8E44200C9DF23 /* SimonSaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysTests.m; sourceTree = "<group>"; };
+		9329155A1AB8EF8C00C9DF23 /* SimonSays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimonSays.h; sourceTree = "<group>"; };
+		9329155B1AB8EF8C00C9DF23 /* SimonSays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonSays.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				932915411AB8E44100C9DF23 /* Images.xcassets */,
 				932915431AB8E44100C9DF23 /* LaunchScreen.xib */,
 				932915341AB8E44100C9DF23 /* Supporting Files */,
+				9329155A1AB8EF8C00C9DF23 /* SimonSays.h */,
+				9329155B1AB8EF8C00C9DF23 /* SimonSays.m */,
 			);
 			path = SimonSays;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9329155C1AB8EF8C00C9DF23 /* SimonSays.m in Sources */,
 				9329153D1AB8E44100C9DF23 /* ViewController.m in Sources */,
 				9329153A1AB8E44100C9DF23 /* AppDelegate.m in Sources */,
 				932915371AB8E44100C9DF23 /* main.m in Sources */,

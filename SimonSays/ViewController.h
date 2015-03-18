@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimonSays.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) SimonSays *simon;
+
+
+
 
 
 @end
