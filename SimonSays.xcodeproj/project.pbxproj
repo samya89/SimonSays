@@ -15,6 +15,7 @@
 		932915451AB8E44100C9DF23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932915431AB8E44100C9DF23 /* LaunchScreen.xib */; };
 		932915511AB8E44200C9DF23 /* SimonSaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 932915501AB8E44200C9DF23 /* SimonSaysTests.m */; };
 		9329155C1AB8EF8C00C9DF23 /* SimonSays.m in Sources */ = {isa = PBXBuildFile; fileRef = 9329155B1AB8EF8C00C9DF23 /* SimonSays.m */; };
+		932915901ABA6A8800C9DF23 /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9329158F1ABA6A8800C9DF23 /* start-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		932915501AB8E44200C9DF23 /* SimonSaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysTests.m; sourceTree = "<group>"; };
 		9329155A1AB8EF8C00C9DF23 /* SimonSays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimonSays.h; sourceTree = "<group>"; };
 		9329155B1AB8EF8C00C9DF23 /* SimonSays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonSays.m; sourceTree = "<group>"; };
+		9329158F1ABA6A8800C9DF23 /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				932915331AB8E44100C9DF23 /* SimonSays */,
 				9329154D1AB8E44200C9DF23 /* SimonSaysTests */,
 				932915321AB8E44100C9DF23 /* Products */,
+				9329158F1ABA6A8800C9DF23 /* start-button.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +209,7 @@
 			files = (
 				932915401AB8E44100C9DF23 /* Main.storyboard in Resources */,
 				932915451AB8E44100C9DF23 /* LaunchScreen.xib in Resources */,
+				932915901ABA6A8800C9DF23 /* start-button.png in Resources */,
 				932915421AB8E44100C9DF23 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimonSays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimonSays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +424,7 @@
 				932915561AB8E44200C9DF23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		932915571AB8E44200C9DF23 /* Build configuration list for PBXNativeTarget "SimonSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				932915591AB8E44200C9DF23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

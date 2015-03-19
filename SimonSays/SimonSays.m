@@ -1,3 +1,4 @@
+
 //
 //  SimonSays.m
 //  SimonSays
@@ -10,6 +11,18 @@
 
 
 @implementation SimonSays
+
+-(instancetype)init {
+    self = [super init];
+    if (self) {
+        self.generatedPattern = [NSMutableArray array];
+        self.userPattern = [NSMutableArray array];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addNextMove) name:@"finishedWinAnimation" object:nil];
+    }
+    
+    return self;
+
+}
 
 - (void)addToPattern {
     NSArray *colors = @[@"red", @"blue", @"orange", @"green"];
@@ -30,7 +43,6 @@
 - (void)inputColor:(NSString *)color {
     [self.userPattern addObject:color];
     // compare userPattern with generatedPattern
-    
     BOOL lose = NO;
     
     for (int i = 0; i < self.userPattern.count; i++) {
@@ -41,15 +53,14 @@
     }
     if (lose) {
     // trigger lose animation, reset games
-       // [self.delegate ]
         [self.delegate animateLose];
         [self resetRound];
         
     } else {
-        
+        // did we complete a round?
         if (self.userPattern.count == self.generatedPattern.count) {
             [self.delegate animateWin];
-            [self.generatedPattern addObject:color];
+            //[self.generatedPattern addObject:color];
 //            [self.delegate animateSequence:self.nextColor];
             // animate win, add to pattern, animate sequence
         }
@@ -58,10 +69,13 @@
     
 }
 
+- (void)addNextMove{
+    [self.userPattern removeAllObjects];
+    [self addToPattern];
+}
 
 
 
-                                  
                                   
                                   
                                     

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SimonSays.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<SimonDelegate>
 
 @property (strong, nonatomic) SimonSays *simon;
 
